@@ -1,0 +1,13 @@
+@import url("reset.css");
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .left-menu {
+    background: rgba(0,0,0,.5);
+}
+
+header .right-menu {
+    background: rgba(255,0,0,.5);
+}
