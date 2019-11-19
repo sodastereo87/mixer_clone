@@ -68,7 +68,13 @@ header .right-menu .signin {
 }
 
 #featured {
+padding: 50px 0;
+}
 
+#featured .title {
+ font-size: 2rem;
+ color: white;
+ margin-bottom: 30px;
 }
 
 #featured .videos-section {
@@ -108,3 +114,36 @@ background: red;
     transform: scale(1.05);
     border: 3px solid #00b4f0;
  }
+
+ #featured .videos-section .video:nth-child(1) .image,
+  #featured .videos-section .video:nth-child(5) .image  {
+  position: relative;
+}
+
+#featured .videos-section .video:nth-child(1) .image .arrow 
+ {
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#featured .videos-section .video:nth-child(5) .image .arrow 
+ {
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    right: 0;
+}
+
+#featured .videos-section .video:nth-child(1) .image .arrow .fas ,
+#featured .videos-section .video:nth-child(5) .image .arrow .fa {
+    font-size: 4rem;
+    color: #00b4f0;
+
+}
