@@ -61,3 +61,50 @@ header .right-menu .signin {
     font-weight: 700;
     color: white;
 }
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#featured {
+
+}
+
+#featured .videos-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr 620px 2fr 1fr;
+    grid-gap: 10px;
+}
+
+#featured .videos-section .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#featured .videos-section .video .image {
+    width: 100%;
+    height: 300px;
+    background: url("https://www.roadtovr.com/wp-content/uploads/2016/06/resident-evil-7-biohazard.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ 
+#featured .videos-section .video.center {
+width: 100%;
+height: 349px;
+background: red;
+}
+
+#featured .videos-section .video-center .image {
+    width: 100%;
+    height: 349px;
+    background: url("http://images1.fanpop.com/images/image_uploads/Resident-Evil-4-resident-evil-894834_1280_1024.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1.05);
+    border: 3px solid #00b4f0;
+ }
