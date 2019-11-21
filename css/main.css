@@ -1,9 +1,10 @@
 @import url("reset.css");
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap');
 
 html, body {
 background: #253141;
-font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
 background-image: linear-gradient(
     to bottom,
      rgba(37, 49, 65, 0.4) 0%, 
@@ -41,13 +42,22 @@ header .left-menu .menu {
 }
 
 header .left-menu .menu a {
+   font-size: 1.2rem;
    color: rgba(255, 255, 255, 0.6);
    text-decoration: none;
    padding: 0 20px;
    text-transform: uppercase;
    font-weight: 300;
+   transition: all 0.2s ease-in-out;
 }
 
+header .left-menu .menu a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+header .left-menu .menu a .fas   {
+    margin-left: 5px;
+}
 
 header .right-menu {
     display: flex;
@@ -61,6 +71,17 @@ header .right-menu .language {
     padding: 0 60px 0 0;
     text-transform: uppercase;
     font-weight: 300;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+header .right-menu .language:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+header .right-menu .language .fas   {
+    margin-left: 5px;
 }
 
 header .right-menu .signin {
@@ -78,14 +99,14 @@ header .right-menu .signin {
     margin: 0 auto;
 }
 
-#featured {
-padding: 50px 0;
+.title {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 30px; 
 }
 
-#featured .title {
- font-size: 2rem;
- color: white;
- margin-bottom: 30px;
+#featured { 
+    padding: 50px 0 50px;
 }
 
 #featured .videos-section {
@@ -107,6 +128,7 @@ padding: 50px 0;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: pointer;
  }
  
 #featured .videos-section .video.center {
@@ -124,6 +146,7 @@ padding: 50px 0;
     background-repeat: no-repeat;
     transform: scale(1.05);
     border: 3px solid #00b4f0;
+    cursor: pointer;
  }
 
  #featured .videos-section .video:nth-child(1) .image,
@@ -139,7 +162,12 @@ padding: 50px 0;
     display: flex;
     justify-content: center;
     padding: 20px;
+    transition: all 0.2s ease-in-out;
 }
+
+#featured .videos-section .video:nth-child(1) .image .arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+ }
 
 #featured .videos-section .video:nth-child(5) .image .arrow 
  {
@@ -150,7 +178,13 @@ padding: 50px 0;
     justify-content: center;
     padding: 10px;
     right: 0;
+    transition: all 0.2s ease-in-out;
 }
+
+#featured .videos-section .video:nth-child(5) .image .arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+ }
+
 
 #featured .videos-section .video:nth-child(1) .image .arrow .fas ,
 #featured .videos-section .video:nth-child(5) .image .arrow .fa {
@@ -163,7 +197,7 @@ padding: 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 20px;
 }
 
 #featured .dots .circles {
@@ -201,3 +235,58 @@ padding: 50px 0;
     border-radius: 50%;
     background: #00b4f0;
  }
+
+#top-games {
+
+}
+
+#top-games .games {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+#top-games .games .game {
+  background: url("https://pre00.deviantart.net/f022/th/pre/i/2012/265/e/1/resident_evil_remake_poster___the_remake_by_iceweb38-d5fjavm.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  border-radius: 5px;
+  position: relative;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#top-games .games .game .info {
+    background: #253041;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+#top-games .games .game:hover .info { 
+    background: #313f55;
+}
+
+#top-games .games .game .info .title {
+     font-weight: 600;
+     margin-bottom: 10px;
+}
+
+#top-games .games .game .info .views { 
+    font-weight: 300;
+    color: #8c919d ;
+    font-size: 0.9rem;
+}
+
+#top-games .games .game .info .views .fa { 
+margin-right: 5px;
+}
+
